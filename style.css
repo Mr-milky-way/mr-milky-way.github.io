@@ -1,1 +1,11 @@
-
+body {
+        font-family: 'Arial', sans-serif;
+        background:
+          calc(.9*10px) calc(.9*10px)/calc(2*10px) calc(2*10px) conic-gradient(at 20% 20%, #0000 75%, rgba(0, 0, 0, 0.5) 0),
+          calc(-.1*10px) calc(-.1*10px)/calc(2*10px) calc(2*10px) conic-gradient(at 20% 20%, #0000 75%, rgba(0, 0, 0, 0.5) 0),
+          calc(.7*10px) calc(.7*10px)/calc(2*10px) calc(2*10px) conic-gradient(at 40% 40%, #0000 75%, #000000 0),
+          calc(-.3*10px) calc(-.3*10px)/calc(2*10px) calc(2*10px) conic-gradient(at 40% 40%, #0000 75%, #000000 0),
+          conic-gradient(from 90deg at 20% 20%, rgba(0, 0, 0, 0.5) 25%, #000000 0) 0 0/10px 10px;
+        text-align: center;
+        margin: 50px;
+      }
