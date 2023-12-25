@@ -11,7 +11,7 @@ body {
 
 .menu-item {
   color: white;
-  font-size: clamp(3rem, 8vm, 8rem);
+  font-size: clamp(3rem, 8vw, 8rem);
   font-family: "Ibarra Real Nova", serif;
 
   display: block;
