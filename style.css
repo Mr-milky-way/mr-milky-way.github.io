@@ -2,3 +2,15 @@ body {
   background-color: rgb(20,20,20)
   margin: 0px;
 }
+
+#menu {
+  height:100vh;
+  display: flex;
+  align-item: center;
+}
+
+.menu-item {
+  color: white;
+  font-size: clamp(3rem, 8vm, 8rem);
+  font-family: "Ibarra Real Nova", serif;
+}
