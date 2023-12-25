@@ -1,12 +1,12 @@
 body {
-  background-color: rgb(20,20,20)
+  background-color: rgb(20,20,20);
   margin: 0px;
 }
 
 #menu {
   height:100vh;
   display: flex;
-  align-item: center;
+  align-items: center;
 }
 
 .menu-item {
@@ -17,4 +17,8 @@ body {
   display: block;
   text-decoration: none;
   padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+}
+
+#menu-items {
+  margin-left: clamp(4rem, 20vw, 48rem);
 }
