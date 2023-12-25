@@ -58,3 +58,19 @@ body {
   background-size: 11vmin 11vmin;
   opacity: 0.5;
 }
+
+#menu[data-active-index="0"] > #menu-background-pattern {
+  background-position: 0% -25%;
+}
+
+#menu[data-active-index="1"] > #menu-background-pattern {
+  background-position: 0% -50%;
+}
+
+#menu[data-active-index="2"] > #menu-background-pattern {
+  background-position: 0% -75%;
+}
+
+#menu[data-active-index="0"] > #menu-background-pattern {
+  background-position: 0% -100%;
+}
