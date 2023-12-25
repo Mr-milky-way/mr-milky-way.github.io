@@ -48,8 +48,8 @@ body {
   justify-content: center;
   aspect-ratio: 1;
   position: relative;
-  margin: 1rem;
-  border-radius: 2rem;
+  margin: 3rem;
+  border-radius: 6rem;
   overflow: hidden;
   cursor: pointer;
 }
@@ -110,7 +110,7 @@ body {
 
 @media(max-width: 600px) {
   :root {
-    --card-size: 1080px;
+    --card-size: 340px;
   }
   
   .card {
