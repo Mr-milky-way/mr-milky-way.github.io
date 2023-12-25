@@ -110,7 +110,7 @@ body {
 
 @media(max-width: 600px) {
   :root {
-    --card-size: 340px;
+    --card-size: 1080px;
   }
   
   .card {
