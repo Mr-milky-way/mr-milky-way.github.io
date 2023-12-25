@@ -1,8 +1,113 @@
+:root {
+  --background-rgb: 2 6 23;
+  --background-light-rgb: 30 41 59;
+
+  --border-rgb: 255 255 255;
+  --border: 1px solid rgb(var(--border-rgb) / 20%);
+
+  --hyperplexed-main-rgb: 41 121 255;
+  --hyperplexed-main-light-rgb: 56 182 255;
+  --hyperplexed-secondary-rgb: 42 252 152;
+
+  --card-size: 480px;
+  --font-size: 0.8rem;
+  --logo-size: calc(var(--card-size) * 0.3);
+}
+
 body {
-        backround: rgb(var(--backround-rgb));
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        overflow: hidden;
-        font-family: 'Noto Sans', sans-serif;
-     }
+  background: rgb(var(--background-rgb));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card-track {
+  height: 100%;
+  width: var(--card-size);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.card-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+}
+.card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 4;
+}
+
+.card-image > img {
+  width: var(--logo-size);
+}
+
+.card-gradient {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: radial-gradient(
+    rgb(var(--background-light-rgb)) 40%,
+    rgb(var(--hyperplexed-main-rgb)) 50%,
+    rgb(var(--hyperplexed-main-light-rgb)),
+    rgb(var(--hyperplexed-secondary-rgb))
+  );
+  mix-blend-mode: darken;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.card-letters {
+  --x: 0px;h
+  --y: 0px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: var(--font-size);
+  font-weight: 500;
+  word-wrap: break-word;
+  opacity: 0;
+  transition: opacity 400ms;
+  -webkit-mask-image: radial-gradient(
+    calc(var(--card-size) * 0.8) circle at var(--x) var(--y),
+    rgb(255 255 255) 20%,
+    rgb(255 255 255 / 25
+    transparent
+  );
+  scale: 1.03;
+}
+
+.card:hover .card-letters {
+  opacity: 1;
+}
+
+@media(max-width: 600px) {
+  :root {
+    --card-size: 340px;
+  }
+
+  .card {
+    border-radius: 1rem;
+  }
+}
