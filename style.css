@@ -17,6 +17,10 @@ body {
   opacity: 0.3;
 }
 
+#menu-items:hover > .menu-item:hover {
+  opacity: 0.5;
+}
+
 .menu-item {
   color: white;
   font-size: clamp(3rem, 8vw, 8rem);
