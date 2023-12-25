@@ -18,7 +18,7 @@ body {
 }
 
 #menu-items:hover > .menu-item:hover {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .menu-item {
