@@ -9,7 +9,7 @@
   --hyperplexed-main-light-rgb: 56 182 255;
   --hyperplexed-secondary-rgb: 42 252 152;
     
-  --card-size: 480px;
+  --card-size: 1080px;
   --font-size: 0.8rem;
   --logo-size: calc(var(--card-size) * 0.3);
 }
@@ -48,8 +48,8 @@ body {
   justify-content: center;
   aspect-ratio: 1;
   position: relative;
-  margin: 3rem;
-  border-radius: 6rem;
+  margin: 1rem;
+  border-radius: 2rem;
   overflow: hidden;
   cursor: pointer;
 }
