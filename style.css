@@ -2,18 +2,12 @@ body {
   background-color: rgb(20, 20, 20);
   margin: 0px;
 }
-h1 {
-  color: white;
-  font-size: clamp(3rem, 8vw, 8rem);
-  font-family: "Ibarra Real Nova", serif;
-  align-items: center;
-}
 
 #menu {
   height:100vh;
   display: flex;
   align-items: center;
-  opacity: 0;
+  opacity: 1;
 }
 
 #menu-items {
