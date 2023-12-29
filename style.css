@@ -26,7 +26,7 @@ h1 {
 }
 
 #openMenuButton {
-  margin-right: 50px;
+  right: 25px;
   color: white;
   z-index: 0;
 }
@@ -36,6 +36,7 @@ h1 {
   position: absolute;
   top: 0;
   right: 25px;
+  font-size: 36px;
   margin-left: 50px;
 }
 
