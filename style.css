@@ -3,6 +3,13 @@ body {
   margin: 0px;
 }
 
+h1 {
+  color: white;
+  position: fixed;
+  align-items: center;
+  display: flex;
+}
+
 #menu {
   height:100%;
   width: 0;
@@ -18,6 +25,7 @@ body {
 }
 
 #openMenuButton {
+  left: 25px;
   color: white;
 }
 
