@@ -8,13 +8,14 @@ h1 {
   position: fixed;
   align-items: center;
   display: flex;
+  z-index: 0;
 }
 
 #menu {
   height:100%;
   width: 0;
   position: fixed;
-  z-index: 3;
+  z-index: 50;
   top: 0;
   left: 0;
   display: flex;
@@ -27,6 +28,7 @@ h1 {
 #openMenuButton {
   left: 25px;
   color: white;
+  z-index: 0;
 }
 
 #closebtn {
