@@ -13,13 +13,15 @@ body {
   display: flex;
   align-items: center;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: cubic-bezier(1, 0, 0, 1.01);
+  transition-duration: 2s;
 }
+
 #openMenuButton {
   color: white;
 }
 
-.closebtn {
+#closebtn {
   position: absolute;
   top: 0;
   right: 25px;
