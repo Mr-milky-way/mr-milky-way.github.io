@@ -44,7 +44,7 @@ h1 {
 #menu-items {
   margin-left: clamp(4rem, 20vw, 48rem);
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
 
 #menu-items:hover > .menu-item {
@@ -80,7 +80,7 @@ h1 {
   position: absolute;
   left: 0px;
   top: 0px;
-  z-index: 1;
+  z-index: 5;
 
   transition: opacity 800ms ease,
     background-size 800ms ease;
