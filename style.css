@@ -22,6 +22,7 @@ body {
 }
 
 #closebtn {
+  color: white;
   position: absolute;
   top: 0;
   right: 25px;
