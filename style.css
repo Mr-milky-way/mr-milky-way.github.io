@@ -26,15 +26,16 @@ h1 {
 }
 
 #openMenuButton {
-  left: 25px;
+  right: 25px;
   color: white;
   z-index: 0;
-  margin-right: 50px;
 }
 
 #closebtn {
-  right: 25px;
   color: white;
+  position: absolute;
+  top: 0;
+  right: 25px;
   margin-left: 50px;
 }
 
