@@ -4,10 +4,16 @@ body {
 }
 
 #menu {
-  height:100vh;
+  height:100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
-  opacity: 1;
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
 #menu-items {
