@@ -13,7 +13,7 @@ body {
   display: flex;
   align-items: center;
   overflow-x: hidden;
-  transition: cubic-bezier(1, 0, 0, 1.01);
+  transition: cubic-bezier(0.6, 0, 0.4, 1);
   transition-duration: 2s;
 }
 
