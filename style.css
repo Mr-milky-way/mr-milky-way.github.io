@@ -5,7 +5,6 @@ body {
 
 h1 {
   color: white;
-  left: 6vmin;
   position: relative;
   display: flex;
   z-index: 0;
@@ -27,17 +26,15 @@ h1 {
 }
 
 #openMenuButton {
-  left: 25px;
+  right: 25px;
   color: white;
   z-index: 0;
+  margin-left: 50px;
 }
 
 #closebtn {
-  color: white;
-  position: absolute;
-  top: 0;
   right: 25px;
-  font-size: 36px;
+  color: white;
   margin-left: 50px;
 }
 
