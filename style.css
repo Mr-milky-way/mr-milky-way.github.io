@@ -5,8 +5,8 @@ body {
 
 h1 {
   color: white;
-  position: fixed;
-  align-items: center;
+  left: 6vmin;
+  position: relative;
   display: flex;
   z-index: 0;
 }
