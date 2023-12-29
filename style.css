@@ -18,7 +18,8 @@ body {
 #openMenuButton {
   color: white;
 }
-.menu .closebtn {
+
+.closebtn {
   position: absolute;
   top: 0;
   right: 25px;
