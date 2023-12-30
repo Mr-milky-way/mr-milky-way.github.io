@@ -1,86 +1,85 @@
 body {
-    background-color: rgb(20, 20, 20);
-    margin: 0px;
-  }
+  background-color: rgb(20, 20, 20);
+  margin: 0px;
+}
   
-  h1 {
-    color: white;
-    font-size: clamp(3rem, 8vw, 8rem);
-    font-family: "Ibarra Real Nova", serif;
-    align-items: center;
-    position: fixed;
-  }
+h1 {
+  color: white;
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-family: "Ibarra Real Nova", serif;
+  text-align: center;
+}
   
-  #menu {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    background-color: rgb(20, 20, 20);
-    z-index: 3;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    overflow-x: hidden;
-    transition: cubic-bezier(0.6, 0, 0.4, 1);
-    transition-duration: 2s;
-  }
+#menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  background-color: rgb(20, 20, 20);
+  z-index: 3;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  transition: cubic-bezier(0.6, 0, 0.4, 1);
+  transition-duration: 2s;
+}
   
-  #openMenuButton {
-    right: 25px;
-    color: white;
-    z-index: 0;
-  }
+#openMenuButton {
+  right: 25px;
+  color: white;
+  z-index: 0;
+}
   
-  #closebtn {
-    color: white;
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    z-index:9
-  }
+#closebtn {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  z-index:9
+}
   
-  #menu-items {
-    margin-left: clamp(4rem, 20vw, 48rem);
-    position: relative;
-    z-index: 4;
-  }
+#menu-items {
+  margin-left: clamp(4rem, 20vw, 48rem);
+  position: relative;
+  z-index: 4;
+}
   
-  #menu-items:hover>.menu-item {
-    opacity: 0.3;
-  }
+#menu-items:hover>.menu-item {
+  opacity: 0.3;
+}
   
-  #menu-items:hover>.menu-item:hover {
-    opacity: 1;
-  }
+#menu-items:hover>.menu-item:hover {
+  opacity: 1;
+}
   
-  .menu-item {
-    color: white;
-    font-size: clamp(3rem, 8vw, 8rem);
-    font-family: "Ibarra Real Nova", serif;
-    display: block;
-    text-decoration: none;
-    padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
-    transition: opacity 400ms ease;
-  }
+.menu-item {
+  color: white;
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-family: "Ibarra Real Nova", serif;
+  display: block;
+  text-decoration: none;
+  padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+  transition: opacity 400ms ease;
+}
   
-  #menu-background-pattern {
-    height: 100vh;
-    width: 100vw;
-    background-image: radial-gradient( rgba(255, 255, 255, 0.1) 9%, transparent 9%);
-    background-position: 0% 0%;
-    background-size: 12vmin 12vmin;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 0;
-    transition: opacity 800ms ease, background-size 800ms ease;
-  }
-  
-  #menu-items:hover~#menu-background-pattern {
-    background-size: 11vmin 11vmin;
-    opacity: 0.5;
-  }
+#menu-background-pattern {
+  height: 100vh;
+  width: 100vw;
+  background-image: radial-gradient( rgba(255, 255, 255, 0.1) 9%, transparent 9%);
+  background-position: 0% 0%;
+  background-size: 12vmin 12vmin;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  transition: opacity 800ms ease, background-size 800ms ease;
+}
+
+#menu-items:hover~#menu-background-pattern {
+  background-size: 11vmin 11vmin;
+  opacity: 0.5;
+}
   
