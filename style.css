@@ -9,7 +9,7 @@ h1 {
   font-family: "Ibarra Real Nova", serif;
   align-items: center;
   position: absolute;
-  left: auto;
+  align-content: center;
 }
 
 #menu {
