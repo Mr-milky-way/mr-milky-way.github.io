@@ -8,7 +8,8 @@ h1 {
   font-size: clamp(3rem, 8vw, 8rem);
   font-family: "Ibarra Real Nova", serif;
   align-items: center;
-  position: fixed;
+  position: absolute;
+  left: auto;
 }
 
 #menu {
