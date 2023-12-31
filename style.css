@@ -12,7 +12,6 @@ body {
 }
 
 .siteInfo {
-  left: 50%;
   align-items: center;
   aspect-ratio: 1/1.6;
   border: 0.5vmin solid var(--border);
