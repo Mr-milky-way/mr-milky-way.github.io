@@ -55,6 +55,7 @@ body {
   height: 100%;
   transition: background-position 350ms ease;
   width: 100%;
+  z-index: 2;
 }
 
 .siteInfo:hover > .siteInfo-content {
