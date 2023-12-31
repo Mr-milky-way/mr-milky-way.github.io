@@ -35,6 +35,7 @@ body {
   position: absolute;
   top: 0px;
   transition: background-position 350ms ease;
+  transition: transform 350ms ease;
   width: 100%;
 }
 
