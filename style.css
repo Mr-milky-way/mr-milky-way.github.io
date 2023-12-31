@@ -13,6 +13,7 @@ body {
 
 .siteInfo {
   left: 50%;
+  align-items: center;
   aspect-ratio: 1/1.6;
   border: 0.5vmin solid var(--border);
   cursor: pointer;
@@ -36,13 +37,28 @@ body {
   position: absolute;
   top: 0px;
   transition: background-position 350ms ease;
-  transition: transform 350ms ease;
   width: 100%;
 }
 
 .siteInfo:hover:before {
   background-position: 100% 100%;
   transform: scale(1.08, 1.03);
+}
+
+.siteInfo-content {
+  background: radial-gradient( 
+    rgba(255, 255, 255, 0.1) 9%,
+    transparent 9%
+  );
+  background-position: 0% 0%;
+  background-size: 5vmin 5vmin;
+  height: 100%;
+  transition: background-position 350ms ease;
+  width: 100%;
+}
+
+.siteInfo:hover > .siteInfo-content {
+  background-position: -10% 0%;
 }
 
 h1 {
