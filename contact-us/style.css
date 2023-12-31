@@ -9,7 +9,6 @@ body {
   height: 100vh;
   margin: 0px;
   overflow: hidden;
-  place-items: center;
 }
   
 h1 {
@@ -30,7 +29,6 @@ h2 {
 }
 
 h2 > .cool-text {
-  animation: background-pan 3s linear infinite;
   background: linear-gradient(
     to right,
     var(--purple)
@@ -38,9 +36,6 @@ h2 > .cool-text {
     var(--pink)
     var(--purple)
   );
-  background-size: 200%;
-  background-clip: text;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
 }
