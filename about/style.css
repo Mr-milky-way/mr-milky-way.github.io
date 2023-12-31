@@ -11,8 +11,8 @@ h1 {
 }
 h2 {
 color: white;
-  font-size: 36px;
-  font-family: "Ibarra Real Nova", serif;
+  font-family: "Rubik", sans-serif;
+  font-size: clamp(2em, 2vw, 4em);
   text-align: center;
 }
 

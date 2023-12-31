@@ -1,6 +1,16 @@
+:root {
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(103, 58, 183);
+  --pink: rgb(244, 143, 177);
+}
+
 body {
   background-color: rgb(20, 20, 20);
+  display: grid;
+  height: 100vh;
   margin: 0px;
+  overflow: hidden;
+  place-items: center;
 }
   
 h1 {
@@ -8,6 +18,32 @@ h1 {
   font-size: clamp(3rem, 8vw, 8rem);
   font-family: "Ibarra Real Nova", serif;
   text-align: center;
+}
+
+h2 {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: clamp(2em, 2vw, 4em);
+  font-weight: 400;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 > .cool-text {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple)
+    var(--violet)
+    var(--pink)
+    var(--purple)
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
   
 #menu {
