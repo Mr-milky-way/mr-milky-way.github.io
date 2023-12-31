@@ -1,6 +1,46 @@
+:root {
+  --border: rgb(3, 169, 244);
+
+  --g1: rgb(98, 0, 244);
+  --g2: rgb(236, 64, 122);
+  --g3: rgb(253, 216, 53);
+}
+
 body {
   background-color: rgb(20, 20, 20);
   margin: 0px;
+}
+
+.siteInfo {
+  aspect-ratio: 1/1.6;
+  border: 0.5vmin solid var(--border);
+  cursor: pointer;
+  position: relative;
+  width: 56vmin;
+}
+
+.siteInfo:before {
+  background: linear-gradient(
+    130deg,
+    transparent 0% 33%,
+    var(--g1) 66%,
+    var(--g2) 83.5%,
+    var(--g3) 100%
+  );
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  content: "";
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  transition: background-position 350ms ease;
+  width: 100%;
+}
+
+.siteInfo:hover:before {
+  background-position: 100% 100%;
+  transform: scale(1.08, 1.03);
 }
 
 h1 {
