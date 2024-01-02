@@ -13,6 +13,7 @@ body {
 
 .siteInfo {
   align-self: center;
+  margin: auto;
   left: 50%;
   aspect-ratio: 1/1.6;
   border: 0.5vmin solid var(--border);
