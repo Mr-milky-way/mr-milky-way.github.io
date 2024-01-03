@@ -1,8 +1,25 @@
-body {
-  background-color: rgb(20, 20, 20);
-  margin: 0px;
+:root {
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(103, 58, 183);
+  --pink: rgb(244, 143, 177);
 }
 
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}
+
+body {
+  background-color: rgb(20, 20, 20);
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+}
+  
 h1 {
   color: white;
   font-size: clamp(3rem, 8vw, 8rem);
@@ -10,6 +27,32 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: clamp(2em, 2vw, 4em);
+  font-weight: 400;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 > .cool-text {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--pink),
+    var(--purple)
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+  
 #menu {
   height: 100%;
   width: 0;
@@ -24,13 +67,13 @@ h1 {
   transition: cubic-bezier(0.6, 0, 0.4, 1);
   transition-duration: 2s;
 }
-
+  
 #openMenuButton {
   right: 25px;
   color: white;
   z-index: 0;
 }
-
+  
 #closebtn {
   color: white;
   position: absolute;
@@ -40,21 +83,21 @@ h1 {
   margin-left: 50px;
   z-index:9
 }
-
+  
 #menu-items {
   margin-left: clamp(4rem, 20vw, 48rem);
   position: relative;
   z-index: 4;
 }
-
+  
 #menu-items:hover>.menu-item {
   opacity: 0.3;
 }
-
+  
 #menu-items:hover>.menu-item:hover {
   opacity: 1;
 }
-
+  
 .menu-item {
   color: white;
   font-size: clamp(3rem, 8vw, 8rem);
@@ -64,7 +107,7 @@ h1 {
   padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
   transition: opacity 400ms ease;
 }
-
+  
 #menu-background-pattern {
   height: 100vh;
   width: 100vw;
@@ -82,3 +125,4 @@ h1 {
   background-size: 11vmin 11vmin;
   opacity: 0.5;
 }
+  
