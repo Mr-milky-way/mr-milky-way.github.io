@@ -12,8 +12,7 @@ body {
 }
 
 .siteInfo {
-  margin: 0 0 0 -50%;
-  left: 50%;
+  margin: auto;
   aspect-ratio: 1/1.6;
   border: 0.5vmin solid var(--border);
   cursor: pointer;
