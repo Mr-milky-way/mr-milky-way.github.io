@@ -71,7 +71,7 @@ h2 > .cool-text {
 #openMenuButton {
   right: 25px;
   color: white;
-  z-index: 0;
+  z-index: 1;
 }
   
 #closebtn {
