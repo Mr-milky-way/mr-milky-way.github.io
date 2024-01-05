@@ -65,6 +65,12 @@ body {
   background-position: -10% 0%;
 }
 
+.siteInfo:hover > .siteInfo-content > .card-subtitle .card-subtitle-word {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: opacity 0ms, transform 200ms cubic-bezier(.90, .6, .15, .90);
+}
+
 .card-title,
 .card-subtitle {
   color: white;
