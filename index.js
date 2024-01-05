@@ -24,4 +24,4 @@ const addWord = (text, index) => subtitle.appendChild(createWord(text, index));
 
 const createSubtitle = text => text.split(" ").map(addWord);
 
-createSubtitle("But in a much more real sense, it's the best one.");
+createSubtitle("Better than the one you just came from");
