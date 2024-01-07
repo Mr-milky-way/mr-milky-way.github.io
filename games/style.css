@@ -2,6 +2,8 @@
   --purple: rgb(123, 31, 162);
   --violet: rgb(103, 58, 183);
   --pink: rgb(244, 143, 177);
+
+  --bg: rgb(20, 20, 20);
 }
 
 @keyframes background-pan {
@@ -14,8 +16,7 @@
 }
 
 body {
-  background-color: rgb(20, 20, 20);
-  height: 100vh;
+  background-color: var(--bg);
   margin: 0px;
 }
   
@@ -56,7 +57,7 @@ h2 > .cool-text {
   height: 100%;
   width: 0;
   position: fixed;
-  background-color: rgb(20, 20, 20);
+  background-color: var(--bg);
   z-index: 3;
   top: 0;
   left: 0;
@@ -70,7 +71,7 @@ h2 > .cool-text {
 #openMenuButton {
   right: 25px;
   color: white;
-  z-index: 1;
+  z-index: 0;
 }
   
 #closebtn {

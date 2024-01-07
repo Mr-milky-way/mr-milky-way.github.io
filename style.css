@@ -4,10 +4,12 @@
   --g1: rgb(98, 0, 244);
   --g2: rgb(236, 64, 122);
   --g3: rgb(253, 216, 53);
+
+  --bg: rgb(20, 20, 20);
 }
 
 body {
-  background-color: rgb(20, 20, 20);
+  background-color: var(--bg);
   margin: 0px;
 }
 
@@ -108,7 +110,7 @@ h1 {
   height: 100%;
   width: 0;
   position: fixed;
-  background-color: rgb(20, 20, 20);
+  background-color: var(--bg);
   z-index: 3;
   top: 0;
   left: 0;
