@@ -107,6 +107,14 @@ h2 > .cool-text {
   padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
   transition: opacity 400ms ease;
 }
+
+.game-item {
+  color: white;
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-family: "Ibarra Real Nova", serif;
+  display: grid;
+  text-decoration: none;
+}
   
 #menu-background-pattern {
   height: 100vh;
