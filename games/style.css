@@ -25,6 +25,7 @@ body {
   position: absolute;
   left: 0px;
   top: 0px;
+  overflow-x: hidden;
 }
   
 h1 {
