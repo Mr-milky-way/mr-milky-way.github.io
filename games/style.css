@@ -16,9 +16,11 @@
 }
 
 body {
+  height: 100vh;
+  width: 100vw;
   background-image: radial-gradient( rgba(255, 255, 255, 0.1) 9%, transparent 9%);
-  background-color: var(--bg);
-  margin: 0px;
+  background-position: 0% 0%;
+  background-size: 12vmin 12vmin;
 }
   
 h1 {
