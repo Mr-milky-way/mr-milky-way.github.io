@@ -118,10 +118,12 @@ h2 > .cool-text {
 
 .game-item {
   color: white;
-  font-size: clamp(3rem, 8vw, 8rem);
+  font-size: clamp(1.5rem, 4vw, 4rem);
   font-family: "Ibarra Real Nova", serif;
-  display: grid;
+  display: inline-block;
+  padding: 10px 20px;
   text-decoration: none;
+  margin: 10px;
 }
   
 #menu-background-pattern {
