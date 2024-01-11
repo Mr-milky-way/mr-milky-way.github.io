@@ -29,6 +29,7 @@ body {
   cursor: pointer;
   position: relative;
   width: 56vmin;
+  z-index: 1;
 }
 
 .siteInfo:before {
