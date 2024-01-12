@@ -1,11 +1,3 @@
-function openMenu() {
-  document.getElementById("menu").style.width = "100%";
-}
-  
-function closeMenu() {
-  document.getElementById("menu").style.width = "0";
-}
-
 //Check if the page is loaded in an iframe
 if(window.self != window.top) {
   //Almost all browsers will deny Cross-Origin script access, so
