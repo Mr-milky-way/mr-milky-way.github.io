@@ -116,6 +116,13 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  color: white;
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-family: "Ibarra Real Nova", serif;
+  text-align: center;
+}
+
 #menu {
   height: 100%;
   width: 0;
