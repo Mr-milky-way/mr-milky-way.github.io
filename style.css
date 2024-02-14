@@ -22,6 +22,14 @@ body {
   z-index: 0;
 }
 
+.funny_img {
+  margin: auto;
+  border: 0.5vmin solid var(--border);
+  position: relative;
+  width: 56vmin;
+  z-index: 1;
+}
+
 .siteInfo {
   margin: auto;
   aspect-ratio: 1/1.6;
