@@ -158,3 +158,11 @@ h2 > .cool-text {
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
+.button:nth-child(odd) {
+  background: #000000;
+}
+
+.button:nth-child(even) {
+  background: #000000;
+}
