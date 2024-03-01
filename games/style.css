@@ -118,6 +118,7 @@ h2 > .cool-text {
 
 .game-item {
   color: white;
+  border: 0.5rem;
   text-align: center;
   font-size: clamp(1.5rem, 4vw, 4rem);
   font-family: "Ibarra Real Nova", serif;
