@@ -147,17 +147,16 @@ h2 > .cool-text {
 }
 
 .button {
-  border-radius: 4px;
-  background-color: #f4511e;
-  border: none;
-  color: #FFFFFF;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
   text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
   cursor: pointer;
-  margin: 5px;
+  transition: background-color 0.3s;
 }
 
 .button span {
