@@ -178,3 +178,8 @@ h2 > .cool-text {
   background-color: #fff;
   color: #000;
 }
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
