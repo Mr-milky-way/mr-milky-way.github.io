@@ -164,6 +164,16 @@ h2 > .cool-text {
   background-color: #000;
 }
 
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+
 .button:hover {
   background-color: #fff;
   color: #000;
