@@ -156,8 +156,7 @@ h2 > .cool-text {
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
-  transition: color 0.3s;
+  transition: all 0.3s;
 }
 
 .button:nth-child() {
@@ -184,6 +183,10 @@ h2 > .cool-text {
 .button:hover {
   background-color: #fff;
   color: #000;
+}
+
+.button:hover span {
+  padding-right: 25px;
 }
 
 .button:hover span:after {
