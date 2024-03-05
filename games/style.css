@@ -157,6 +157,7 @@ h2 > .cool-text {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s;
+  border-color: rgb(3, 169, 244);
 }
 
 .button:nth-child() {
