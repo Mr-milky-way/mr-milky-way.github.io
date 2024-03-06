@@ -8,7 +8,7 @@
     "orientation": "any",
     "icons": [
         {
-            "src": "https://christine.website/static/img/avatar.png",
+            "src": "/content/favicon/favicon1.ico",
             "sizes": "1024x1024"
         }
     ]
