@@ -1,12 +1,10 @@
 {
-    "name": "Christine Dodrill",
-    "short_name": "Christine",
-    "theme_color": "#ffcbe4",
-    "background_color": "#fa99ca",
+    "name": "Operation Phoenix Dawn",
+    "short_name": "Phoenix",
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "description": "Blog and Resume for Christine Dodrill",
+    "description": "Games for school",
     "orientation": "any",
     "icons": [
         {
