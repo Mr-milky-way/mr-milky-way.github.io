@@ -26,19 +26,54 @@ const createSubtitle = text => text.split(" ").map(addWord);
 
 createSubtitle("Better than the one you just came from");
 
+self.addEventListener("install", function(event) {
+  event.waitUntil(preLoad());
+});
 
-//Check if the page is loaded in an iframe
-if(window.self != window.top) {
-  //Almost all browsers will deny Cross-Origin script access, so
-  //we will use a try-catch block
-  try {
-    if(window.parent.location.hostname.indexOf("mydomain.com") == -1) {
-      window.location.href = "http://www.youtube.com/watch_popup?v=oHg5SJYRHA0";
-    } else {
-      //You are in an iframe but Same-Origin
-    }
-  } catch (ex) {
-    //Congrats, you are in an iframe loaded in a stranger's site!
-    window.location.href = "http://www.youtube.com/watch_popup?v=oHg5SJYRHA0";
-  }
-}
+var preLoad = function(){
+  console.log("Installing web app");
+  return caches.open("offline").then(function(cache) {
+    console.log("caching index and important routes");
+    return cache.addAll(["/games/", "/games", "/", "/join-us", "/about", "/offline.html"]);
+  });
+};
+
+self.addEventListener("fetch", function(event) {
+  event.respondWith(checkResponse(event.request).catch(function() {
+    return returnFromCache(event.request);
+  }));
+  event.waitUntil(addToCache(event.request));
+});
+
+var checkResponse = function(request){
+  return new Promise(function(fulfill, reject) {
+    fetch(request).then(function(response){
+      if(response.status !== 404) {
+        fulfill(response);
+      } else {
+        reject();
+      }
+    }, reject);
+  });
+};
+
+var addToCache = function(request){
+  return caches.open("offline").then(function (cache) {
+    return fetch(request).then(function (response) {
+      console.log(response.url + " was cached");
+      return cache.put(request, response);
+    });
+  });
+};
+
+var returnFromCache = function(request){
+  return caches.open("offline").then(function (cache) {
+    return cache.match(request).then(function (matching) {
+     if(!matching || matching.status == 404) {
+       return cache.match("offline.html");
+     } else {
+       return matching;
+     }
+    });
+  });
+};
