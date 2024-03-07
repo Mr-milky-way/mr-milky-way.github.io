@@ -3,12 +3,12 @@
     "short_name": "Phoenix",
     "display": "standalone",
     "scope": "/",
-    "start_url": "/",
+    "start_url": "https://mr-milky-way.github.io/",
     "description": "Games for school",
     "orientation": "any",
     "icons": [
         {
-            "src": "https://christine.website/static/img/avatar.png",
+            "src": "https://mr-milky-way.github.io/content/favicon/favicon1.ico",
             "sizes": "1024x1024"
         }
     ]
