@@ -34,7 +34,7 @@ var preLoad = function(){
   console.log("Installing web app");
   return caches.open("offline").then(function(cache) {
     console.log("caching index and important routes");
-    return cache.addAll(["/games/", "/games", "/", "/join-us", "/about", "/offline.html"]);
+    return cache.addAll(["/games/", "/games", "/", "/join-us", "/about", "/offline.html", "/hacks"]);
   });
 };
 
