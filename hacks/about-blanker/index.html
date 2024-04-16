@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+  <TITLE>about-blanker</TITLE>
+</HEAD>
+<BODY>
+         <style>
+      input {
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 33px;
+        border: 1px solid grey;
+      }
+      
+      button {
+        border: none;
+        outline: none;
+        background-color: #1e1e1e;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        border-radius: 5px;
+        transition: all ease 0.1s;
+        box-shadow: 0px 5px 0px 0px #343434;
+      }
+      
+      button:active {
+          transform: translateY(5px);
+          box-shadow: 0px 0px 0px 0px #a29bfe;
+      }
+      
+      button:hover {
+        cursor: pointer;
+      }
+      
+      #clear {
+        background-color: #D10000;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        border-radius: 5px;
+        transition: all ease 0.1s;
+        box-shadow: 0px 5px 0px 0px #FF2E2E;
+        border: none;
+        outline: none;
+      }
+      
+      #clear:active {
+          transform: translateY(5px);
+          box-shadow: 0px 0px 0px 0px #a29bfe;
+      }
+      
+      #create {
+        background-color: #00A300;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        border-radius: 5px;
+        transition: all ease 0.1s;
+        box-shadow: 0px 5px 0px 0px #00D100;
+        border: none;
+        outline: none;
+      }
+      
+      #create:active {
+          transform: translateY(5px);
+          box-shadow: 0px 0px 0px 0px #a29bfe;
+      }
+    </style>
+  </head>
+<body>
+    <div class="console-container">
+      <div class="console">
+        <h1 class="title">about:blank Embedder</h1>
+        <button class="popup"
+        onclick="alert('Hello there!\n\ \n\You simply enter in a URL, press Create Page, and the website is created in a new tab with the URL about:blank so teachers cannot see what you are doing. Note: This DOES NOT unblock websites, it only embeds them into pages with the URL about:blank. It also may not work on websites that do not allow embedding.');"
+      >
+        What is this?
+      </button>
+        <div class="consolebody">
+          <h2>Enter URL Below</h2>
+          <p class="console-input"><input placeholder="https://website.com" id="url-target" value="" autocomplete="on" type="text" autofocus /></p>
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <button id="create" class="console-button">Create Page</button>
+        <button id="clear" class="console-button" onclick="document.getElementById('url-target').value = ''">Clear Input</button>
+      </div>
+    </div>
+    <script>
+      var url = document.getElementById("url-target");
+      var urlObj = new window.URL(window.location.href);
+      document.getElementById("create").onclick = function () {
+        if (url.value.substring(0, 8) !== "https://" && url.value.substring(0, 7) !== "http://") {
+          url.value = "https://" + url.value.split("https://").pop();
+        } else if (url.value.substring(0, 7) == "http://") {
+          url.value = "https://" + url.value.split("http://").pop();
+        }
+        win = window.open();
+        win.document.body.style.margin = "0";
+        win.document.body.style.height = "100vh";
+        var iframe = win.document.createElement("iframe");
+        iframe.style.border = "none";
+        iframe.style.width = "100%";
+        iframe.style.height = "100%";
+        iframe.style.margin = "0";
+        iframe.referrerpolicy = "no-referrer";
+        iframe.allow = "fullscreen";
+        iframe.src = url.value;
+        win.document.body.appendChild(iframe);
+      };
+    </script>
+  </body>
+</html>
