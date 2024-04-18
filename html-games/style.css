@@ -161,7 +161,7 @@ h2 > .cool-text {
   opacity: 0.5;
 }
 
-.Button-container {
+.container {
   width: 100%;
   min-height: 100vh;
   display: flex;
