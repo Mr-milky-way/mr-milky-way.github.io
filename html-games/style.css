@@ -161,6 +161,17 @@ h2 > .cool-text {
   opacity: 0.5;
 }
 
+.Button-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 120px;
+  background: #27282c;
+}
+
 .button {
   position: relative;
   padding: 16px 30px;
