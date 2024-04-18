@@ -114,7 +114,7 @@ h2 > .cool-text {
   
 .menu-item {
   color: white;
-  font-size: clamp(3rem, 8vw, 8rem);
+  font-size: clamp(1.5rem, 4vw, 4rem);
   font-family: "Ibarra Real Nova", serif;
   display: block;
   text-decoration: none;
