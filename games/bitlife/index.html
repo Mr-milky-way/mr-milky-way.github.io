@@ -12,6 +12,15 @@
       var unityInstance = UnityLoader.instantiate("gameContainer", "Build/BitLife.json", {onProgress: UnityProgress});
     </script>
   </head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RW5XLDCNXJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RW5XLDCNXJ');
+</script>
   <body>
   <div class="webgl-content">
       <div id="gameContainer" style="width: 100%; height: 100%;"></div>
