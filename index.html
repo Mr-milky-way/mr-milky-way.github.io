@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Operation Phoenix Dawn</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="content/favicon/favicon1.ico"/>
-    <link rel="manifest" href="/static/manifest.json">
-  </head>
-  <!-- Google tag (gtag.js) -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Operation Phoenix Dawn</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="content/favicon/favicon1.ico" />
+  <link rel="manifest" href="/static/manifest.json">
+</head>
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RW5XLDCNXJ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-RW5XLDCNXJ');
 </script>
-  <body>
-    <div id="nav">
-      <span style= "font-size:30px;cursor:pointer"
-        onclick="openMenu()">&#9776; Menu
+
+<body>
+  <div id="nav">
+    <span style="font-size:30px;cursor:pointer" onclick="openMenu()">&#9776; Menu
+    </span>
+  </div>
+  <div id="menu">
+    <div id="closebtn">
+      <span style="font-size:36px;cursor:pointer" onclick="closeMenu()">&times;
       </span>
     </div>
-	    <div id="menu">
-        <div id="closebtn">
-          <span style= "font-size:36px;cursor:pointer"
-            onclick="closeMenu()">&times;
-          </span>
-        </div>
-		  <div id="menu-items">
-			  <a href="/" class="menu-item">Home</a>
-			  <a href="games/" class="menu-item">Games</a>
-			   	<a href="/html-games" class="menu-item">HTML Games</a>
-			  <a href="TOS/" class="menu-item">TOS</a>
-			  <a href="join-us/" class="menu-item">Join Us</a>
-        <a href="hacks/" class="menu-item">Hacks</a>
-		  </div>
-		  <div id="menu-background-pattern"></div>
-	  </div>
-    <h1>Home</h1>
-    <div class="siteInfo">
-      <div class="siteInfo-content">
-        <h3 class="card-title">The BEST unblocked games site</h3>
-        <h4 class="card-subtitle"></h4>
-      </div>
+    <div id="menu-items">
+      <a href="/" class="menu-item">Home</a>
+      <a href="games/" class="menu-item">Games</a>
+      <a href="/html-games" class="menu-item">HTML Games</a>
+      <a href="TOS/" class="menu-item">TOS</a>
+      <a href="join-us/" class="menu-item">Join Us</a>
+      <a href="hacks/" class="menu-item">Hacks</a>
     </div>
-	  <script src="index.js"></script>
-  </body>
+    <div id="menu-background-pattern"></div>
+  </div>
+  <h1>Home</h1>
+  <div class="siteInfo">
+    <div class="siteInfo-content">
+      <h3 class="card-title">The BEST unblocked games site</h3>
+      <h4 class="card-subtitle"></h4>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
 </html>
