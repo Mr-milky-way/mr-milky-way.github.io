@@ -3,59 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Arcade Games</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Cool Menu Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Retro Arcade Games</h1>
-        <div class="search">
-            <input type="text" id="searchInput" placeholder="Search for games...">
-            <button onclick="searchGames()">Search</button>
-        </div>
+        <h1>Welcome to Our Cool Menu Design</h1>
     </header>
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Games</a></li>
             <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-    <section class="games">
-        <!-- Game thumbnails and descriptions -->
-        <div class="game">
-            <img src="game1.jpg" alt="Game 1">
-            <h2>Game 1 Title</h2>
-            <p>Description of Game 1</p>
-        </div>
-        <div class="game">
-            <img src="game2.jpg" alt="Game 2">
-            <h2>Game 2 Title</h2>
-            <p>Description of Game 2</p>
-        </div>
-        <!-- Add more game entries as needed -->
-    </section>
-    <footer>
-        <p>&copy; 2024 Retro Arcade Games. All rights reserved.</p>
-    </footer>
-
-    <script>
-        function searchGames() {
-            var input, filter, games, game, title, i, txtValue;
-            input = document.getElementById("searchInput");
-            filter = input.value.toUpperCase();
-            games = document.getElementsByClassName("game");
-            for (i = 0; i < games.length; i++) {
-                title = games[i].getElementsByTagName("h2")[0];
-                txtValue = title.textContent || title.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    games[i].style.display = "";
-                } else {
-                    games[i].style.display = "none";
-                }
-            }
-        }
-    </script>
+    <div>
+        <!-- Your content goes here -->
+    </div>
 </body>
 </html>
