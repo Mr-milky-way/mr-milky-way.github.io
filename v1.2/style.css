@@ -1,131 +1,101 @@
-:root {
-    --borderRadius: 10px;
-    --spacer: 1rem;
-    --primary: #C4151C;
-    --text: #fff;
-    --linkHeight: --spacer * 3.5;
-    --timing: 250ms;
-    --transition: --timing ease all;
-    --linkWidth: 10rem;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
-
 body {
-    background: #000 url(https://unsplash.it/1600/1000/?random);
-    background-size: cover;
-    background-position: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d; /* Dark background */
+    color: #fff; /* White text */
 }
 
-.header {
-    --ref: &;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.9);
-    color: --text;
-    padding: 0 --spacer*2;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.03);
-    height: 6rem;
+header {
+    background-color: #2a2a2a; /* Dark gray header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav {
+    background-color: #333; /* Darker gray navigation */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.games {
     display: flex;
-    align-items: center;
-    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-
-    &__menu {
-        position: relative;
-        display: flex;
-    }
-
-    &__link {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 0.6rem;
-        align-items: center;
-        justify-content: center;
-        height: --linkHeight;
-        width: --linkWidth;
-        color: --text;
-        transition: --transition;
-        text-decoration: none;
-        width: --linkWidth;
-        text-transform: uppercase;
-        transition: 500ms ease all;
-
-        svg {
-            transition: 500ms ease all;
-        }
-
-        &:hover {
-            svg {
-                stroke: --primary;
-            }
-        }
-
-        .navbar:not(:hover) &:focus,
-        &:hover {
-            span {
-                opacity: 1;
-                transform: translate(0);
-            }
-        }
-    }
-
-    &__item {
-        &:last-child {
-            &:before {
-                content: '';
-                position: absolute;
-                left: -8rem;
-                margin-left: --linkWidth/2;
-                bottom: -1.25rem;
-                height: 0.5rem;
-                width: 2px;
-                background: --primary;
-                --speedlineColor: rgba(#fff, 0.2);
-                --speedGap: 3rem;
-                --shadow: 0 -0.5rem --primary, 0 -0.5rem --primary, 0 0 --speedGap 0.5rem --primary, 2rem 0 0 --speedlineColor, ---speedGap 0 0 --speedlineColor;
-
-                @for --i from 2 to 120 {
-                    --shadow: --shadow+#{","}+--i*--speedGap 0 0 --speedlineColor;
-                    --shadow: --shadow+#{","}+--i*---speedGap 0 0 --speedlineColor;
-                }
-
-                box-shadow: --shadow;
-                transition: 500ms ease all;
-            }
-        }
-
-        @for --i from 1 to 12 {
-
-            &:first-child:nth-last-child(#{--i}),
-            &:first-child:nth-last-child(#{--i})~li {
-                @for --j from 1 to --i {
-
-                    &:nth-child(#{--j}):hover,
-                    {
-                    ~li:last-child:before {
-                        left: (100% / --i) * (--j - 1);
-                    }
-                }
-            }
-
-            &:last-child:hover:before,
-            {
-            left: (100% / --i) * (--i - 1);
-        }
-    }
+.game {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* White shadow */
 }
 
+.game img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
 }
+
+.search {
+    margin-top: 20px;
+}
+
+.search input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search button {
+    padding: 10px 20px;
+    background-color: #2a2a2a; /* Dark gray */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #2a2a2a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
