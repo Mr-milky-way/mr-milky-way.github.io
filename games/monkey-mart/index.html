@@ -1,6 +1,15 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RW5XLDCNXJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RW5XLDCNXJ');
+    </script>
     <script id="gamemonetize-sdk" src="https://api.gamemonetize.com/sdk.js"></script>
     <script>(function () {
             (function () {
@@ -125,7 +134,7 @@
                         for (var k = 0;
                             !m && k < j.length;
                             ++k) {
-                                var l = j[k];
+                            var l = j[k];
                             if (l.src && l.src.indexOf(f.u) == 0) {
                                 m = l
                             }
@@ -151,7 +160,7 @@
                                     for (var m = j.firstChild;
                                         m;
                                         m = m.nextSibling) {
-                                            l.push(a(m))
+                                        l.push(a(m))
                                     } k = l.join("")
                                 }
                             }
@@ -194,7 +203,7 @@
                             for (var m = 0, k = n.length;
                                 m < k;
                                 ++m) {
-                                    o(l, n[m])
+                                o(l, n[m])
                             }
                         }
                     }
@@ -247,7 +256,7 @@
                         for (var m = 0, l = n.length;
                             m < l;
                             ++m) {
-                                n[m](b)
+                            n[m](b)
                         }
                     }
                 }
@@ -312,7 +321,7 @@
                     for (var b = 0, a;
                         (a = arguments[b]);
                         ++b) {
-                            c.push(a)
+                        c.push(a)
                     }
                 } else {
                     c = d
@@ -320,9 +329,9 @@
                     for (var e = 0, g;
                         (g = c[e]);
                         ++e) {
-                            if (f === c[e]) {
-                                return true
-                            }
+                        if (f === c[e]) {
+                            return true
+                        }
                     } return false
                 }
             };
@@ -360,13 +369,13 @@
                 for (var b = 2, a = arguments.length;
                     b < a;
                     ++b) {
-                        c.push(arguments[b])
+                    c.push(arguments[b])
                 } return function () {
                     var g = c.slice();
                     for (var k = 0, h = arguments.length;
                         k < h;
                         ++k) {
-                            g.push(arguments[k])
+                        g.push(arguments[k])
                     } return f.apply(d, g)
                 }
             };
@@ -375,7 +384,7 @@
                 for (c = 0;
                     (a = b[c]);
                     ++c) {
-                        d[a] = a
+                    d[a] = a
                 } return d
             }
         })();;
@@ -420,7 +429,7 @@
                                 for (var h = f.firstChild;
                                     h;
                                     h = h.nextSibling) {
-                                        e.push(a(h))
+                                    e.push(a(h))
                                 } g = e.join("")
                             }
                         }
@@ -494,7 +503,7 @@
                 for (var c = 0, b = a.length;
                     c < b;
                     ++c) {
-                        a[c]()
+                    a[c]()
                 }
             }
         })();;
@@ -517,7 +526,7 @@
                             for (var f = 0, d = c.length;
                                 f < d;
                                 ++f) {
-                                    c[f] = gadgets.util.escape(c[f])
+                                c[f] = gadgets.util.escape(c[f])
                             }
                         } else {
                             if (typeof c === "object" && g) {
@@ -539,7 +548,7 @@
                 for (var e = 0, c = g.length;
                     e < c;
                     ++e) {
-                        f = g.charCodeAt(e);
+                    f = g.charCodeAt(e);
                     h = a[f];
                     if (h === true) {
                         d.push("&#", f, ";")
@@ -581,7 +590,7 @@
                 for (var h = 0, g = f.length;
                     h < g;
                     ++h) {
-                        var m = f[h].indexOf("=");
+                    var m = f[h].indexOf("=");
                     if (m === -1) {
                         continue
                     } var c = f[h].substring(0, m);
@@ -628,7 +637,7 @@
                 for (var i = 0;
                     i < args.length;
                     i++) {
-                        var nameAndValue = args[i].split("=");
+                    var nameAndValue = args[i].split("=");
                     if (nameAndValue.length === 2) {
                         var name = nameAndValue[0];
                         var value = nameAndValue[1];
@@ -722,7 +731,7 @@
                                 for (i = 0;
                                     i < l;
                                     i += 1) {
-                                        a.push(stringify(value[i]) || "null")
+                                    a.push(stringify(value[i]) || "null")
                                 } return "[" + a.join(",") + "]"
                             } for (k in value) {
                                 if (/___$/.test(k)) {
@@ -884,7 +893,7 @@
                     for (var i = 0;
                         i < gadgets.io.preloaded_.length;
                         i++) {
-                            var preload = gadgets.io.preloaded_[i];
+                        var preload = gadgets.io.preloaded_[i];
                         if (preload && (preload.id === postData.url)) {
                             delete gadgets.io.preloaded_[i];
                             if (preload.rc !== 200) {
@@ -1087,7 +1096,7 @@
                     for (var m = 0, l = k.length;
                         m < l;
                         ++m) {
-                            k[m] = f(k[m].replace(/%7C/g, "|"))
+                        k[m] = f(k[m].replace(/%7C/g, "|"))
                     } return k
                 } return []
             };
@@ -1168,7 +1177,7 @@
                     for (var h = 0;
                         h < j.data.Entry.length;
                         ++h) {
-                            var i = j.data.Entry[h];
+                        var i = j.data.Entry[h];
                         i.Title = i.title;
                         i.Link = i.link;
                         i.Summary = i.summary || i.description;
@@ -1177,7 +1186,7 @@
                 } for (var g = 0;
                     g < j.data.Entry.length;
                     ++g) {
-                        var i = j.data.Entry[g];
+                    var i = j.data.Entry[g];
                     i.Date = (i.Date / 1000)
                 } f(j.data)
             }, e)
@@ -1214,9 +1223,9 @@
             for (var b = 0, a = c.length;
                 b < a;
                 ++b) {
-                    if (f.test(c[b].id)) {
-                        e.push(c[b])
-                    }
+                if (f.test(c[b].id)) {
+                    e.push(c[b])
+                }
             } return e
         } function _esc(a) {
             return window.encodeURIComponent ? encodeURIComponent(a) : escape(a)
@@ -1255,13 +1264,13 @@
             for (var h = 0, g = f.length;
                 h < g;
                 h++) {
-                    var b = f[h];
+                var b = f[h];
                 m[b] = m[b] || {};
                 m = m[b]
             } for (var e = 0, d = c.length;
                 e < d;
                 e += 2) {
-                    m[c[e]] = c[e + 1]
+                m[c[e]] = c[e + 1]
             }
         } function _IG_AddDOMEventHandler(c, b, a) {
             gadgets.warn("_IG_AddDOMEventHandler not implemented - see SHINDIG-198")
@@ -13826,7 +13835,8 @@
     <div id="button" class="imgb imgb_vis" style="position: fixed; top: 10%; left: -100px; z-index: 10; display: none;">
         <a target="_blank" href="https://sites.google.com/site/classroom6x/" title="More of best games"><img
                 src="https://lh4.googleusercontent.com/lUEWrXMVEr4AdjKISyJahDRJ61bwfvHdpeYm86Djn5U8oCm9dI60NGXSBqad9HUvzTXgqlkosA_hWV-VuXPjzrkGvh3_kNSgYk8ySWzXnDpbBCBiooyBbU8oBy3YBZMDkW8RcRVmDuC0raoeqZBm8kBlqs6c5mdfkJeN2aE68lXS_lcOZ5_F7lIuM6qLVg"
-                width="100" height="30" style="cursor:pointer;" alt="More Unblocked Games"></a></div>
+                width="100" height="30" style="cursor:pointer;" alt="More Unblocked Games"></a>
+    </div>
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
 </html>
