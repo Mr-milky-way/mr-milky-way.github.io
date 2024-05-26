@@ -202,32 +202,5 @@ h2 {
   opacity: 0.5;
 }
 
-.popup {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #222;
-  color: #eee;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  input {
-    transition-duration: 0.4s;
-    background-color: #6A6A6A;
-    color: whitesmoke;
-    font-size: 20px;
-    border-radius: 12px;
-    border: 2px solid black;
-  }
-  input:hover {
-    background-color: #070C5D; 
-    color: white;
-  }
-  button{
-    color: whitesmoke;
-    background-color: #414142;
-  }
 
-}
 
