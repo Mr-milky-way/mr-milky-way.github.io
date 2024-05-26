@@ -1,3 +1,44 @@
+ let keysPressed = [];
+
+      document.addEventListener('keydown', (event) => {
+        keysPressed.push(event.key);
+
+     
+        keysPressed = [...new Set(keysPressed)];
+
+        if (keysPressed.length === 3 && keysPressed.includes('o') && keysPressed.includes('p') && keysPressed.includes('d')) {
+          runMyFunction();
+          keysPressed = []; 
+        }
+      });
+
+      document.addEventListener('keyup', () => {
+        keysPressed = [];
+      });
+
+      function runMyFunction() {
+        openPopup()
+      }
+
+      const form = document.querySelector('form');
+      const passwordInput = document.getElementById('password');
+      const correctPassword = 'OP*2001';
+
+      form.addEventListener('submit', (event) => {
+        if (passwordInput.value !== correctPassword) {
+          event.preventDefault();
+          alert('BAD PASSWORD RETARD');
+        }
+      });
+
+      function openPopup() {
+        document.getElementById("popup").style.display = "block";
+      }
+
+      function closePopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+
 function openMenu() {
   document.getElementById("menu").style.width = "100%";
 }
