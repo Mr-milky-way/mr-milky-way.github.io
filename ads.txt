@@ -62,5 +62,4 @@ google.com, pub-7002491002409919, RESELLER, f08c47fec0942fa0
 google.com, pub-7002491002409919, DIRECT, f08c47fec0942fa0 
 adingo.jp,26007, RESELLER
 -->
-google.com, pub-9776044623882774, DIRECT, f08c47fec0942fa0
 
