@@ -1,25 +1,30 @@
-let jsonData = `[
-  {"Name": "Lion", "Color": "Yellow"},
-  {"Name": "Monkey", "Color": "Orange"},
-  {"Name": "Fish", "Color": "Blue"},
-  {"Name": "Cat", "Color": "Black"}
-]`
+const userCardTemplate = document.querySelector("[data-user-template]")
+const userCardContainer = document.querySelector("[data-user-cards-container]")
+const searchInput = document.querySelector("[data-search]")
 
-let data = JSON.parse(games.json)
+let users = []
 
-function search_games() {
-  let input = document.getElementById('searchbar').value
-  input = input.toLowerCase();
-  let x = document.querySelector('#list-holder');
-  x.innerHTML = ""
+fetch("https://jsonplaceholder.typicode.com/users").then((res) => res.json()).then(data => {
+    users = data.map(user=> {
+        const card = userCardTemplate.content.cloneNode(true).children[0]
+        const header = card.querySelector("[data-header]")
+        const body = card.querySelector("[data-body]")
 
-  for (i = 0; i < data.length; i++) {
-    let obj = data[i];
+        // adding content into the query selected i.e header and body
+        header.textContent = user.name
+        body.textContent = user.email
+        userCardContainer.append(card)
 
-    if (obj.Name.toLowerCase().includes(input)) {
-      const elem = document.createElement("li")
-      elem.innerHTML = `${obj.Name} - ${obj.Color}`
-      x.appendChild(elem)
-    }
-  }
-}
+        // return the result after successfull fetch
+        return {name: user.name, email: user.email, element: card}
+    });
+
+})
+
+searchInput.addEventListener('input', (e) => {
+    const value = e.target.value
+    users.forEach((user) => {
+        const isVisible = user.name.toLowerCase().includes(value) || user.email.toLowerCase().includes(value)
+        user.element.classList.toggle('hide', !isVisible)
+    })
+})
