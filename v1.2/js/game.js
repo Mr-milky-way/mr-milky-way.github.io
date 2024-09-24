@@ -11,12 +11,12 @@ fetch("js/json/games.json").then((res) => res.json()).then(data => {
         const body = card.querySelector("[data-body]")
 
         // adding content into the query selected i.e header and body
-        header.textContent = user.title
-        body.textContent = user.link
+        header.textContent = user.name
+        body.textContent = user.email
         userCardContainer.append(card)
 
         // return the result after successfull fetch
-        return {title: user.name, link: user.email, element: card}
+        return {title: user.name, description: user.email, element: card}
     });
 
 })
