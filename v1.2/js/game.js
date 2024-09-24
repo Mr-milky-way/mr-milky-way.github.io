@@ -4,7 +4,7 @@ const searchInput = document.querySelector("[data-search]")
 
 let users = []
 
-fetch("js/json/games.json").then((res) => res.json()).then(data => {
+fetch("https://jsonplaceholder.typicode.com/users").then((res) => res.json()).then(data => {
     users = data.map(user=> {
         const card = userCardTemplate.content.cloneNode(true).children[0]
         const header = card.querySelector("[data-header]")
@@ -16,7 +16,7 @@ fetch("js/json/games.json").then((res) => res.json()).then(data => {
         userCardContainer.append(card)
 
         // return the result after successfull fetch
-        return {name: title}
+        return {name: user.name, email: user.email, element: card}
     });
 
 })
