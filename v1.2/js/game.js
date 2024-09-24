@@ -41,7 +41,7 @@ fetch('json/games.json')
 
          // Add event listener to the game element to show the iframe popup
         game.addEventListener("click", () => {
-          /* Create the iframe element
+           //Create the iframe element
           const iframe = document.createElement("iframe");
           iframe.src = item.link;
 
@@ -171,7 +171,6 @@ fetch('json/games.json')
           document.body.appendChild(fullscreenButton);  
           // Add the iframe to the document
           document.body.appendChild(iframe);
-          */
         });
       });
     }
