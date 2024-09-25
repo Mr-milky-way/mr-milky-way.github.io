@@ -16,7 +16,7 @@ fetch("js/json/games.json").then((res) => res.json()).then(data => {
         userCardContainer.append(card)
 
         // return the result after successfull fetch
-        return {title: user.name, description: user.email, element: card}
+        return {title: user.title, description: user.description, element: card}
     });
 
 })
