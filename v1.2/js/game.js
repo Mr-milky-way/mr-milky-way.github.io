@@ -11,7 +11,7 @@ fetch("js/json/games.json").then((res) => res.json()).then(data => {
         const body = card.querySelector("[data-body]")
         
         var img = document.createElement("img");
-        img.src = user.image;
+        img.src = "http://www.google.com/intl/en_com/images/logo_plain.png";
         var src = document.getElementById("imgs");
         src.appendChild(img);
 
