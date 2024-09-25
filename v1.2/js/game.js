@@ -12,11 +12,11 @@ fetch("js/json/games.json").then((res) => res.json()).then(data => {
 
         // adding content into the query selected i.e header and body
         header.textContent = user.title
-        body.textContent = user.description
+        body.textContent = user.image
         userCardContainer.append(card)
 
         // return the result after successfull fetch
-        return {title: user.title, description: user.description, element: card}
+        return {title: user.title, description: user.image, element: card}
     });
 
 })
