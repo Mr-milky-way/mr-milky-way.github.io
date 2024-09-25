@@ -8,10 +8,11 @@ fetch("js/json/games.json").then((res) => res.json()).then(data => {
     users = data.map(user=> {
         const card = userCardTemplate.content.cloneNode(true).children[0]
         const header = card.querySelector("[data-header]")
-        const body = card.querySelector("[data-body]")
+        const body = card.querySelector("[data-pic]")
 
         // adding content into the query selected i.e header and body
         header.textContent = user.title
+        body.src = "http://www.google.com/intl/en_com/images/logo_plain.png"
         body.textContent = user.image
         userCardContainer.append(card)
 
