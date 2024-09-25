@@ -9,9 +9,6 @@ fetch("js/json/games.json").then((res) => res.json()).then(data => {
         const card = userCardTemplate.content.cloneNode(true).children[0]
         const header = card.querySelector("[data-header]")
         const body = card.querySelector("[data-body]")
-        
-        document.write('<img src="https://mr-milky-way.github.io/games/xx142-b2exe/icon.png"')
-        document.getElementById('pic')
 
         // adding content into the query selected i.e header and body
         header.textContent = user.title
