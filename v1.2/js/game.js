@@ -12,7 +12,7 @@ fetch("js/json/games.json").then((res) => res.json()).then(data => {
         
         var img = document.createElement("img");
         img.src = user.image;
-        var src = document.getElementById("header");
+        var src = document.getElementById("imgs");
         src.appendChild(img);
 
         // adding content into the query selected i.e header and body
