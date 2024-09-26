@@ -4,6 +4,8 @@ const searchInput = document.querySelector("[data-search]")
 
 let users = []
 
+var strLink = "https://mr-milky-way.github.io/games/xx142-b2exe"
+
 fetch("js/json/games.json").then((res) => res.json()).then(data => {
     users = data.map(user=> {
         const card = userCardTemplate.content.cloneNode(true).children[0]
@@ -12,7 +14,7 @@ fetch("js/json/games.json").then((res) => res.json()).then(data => {
 
         // adding content into the query selected i.e header and body
         header.textContent = user.title
-        body.setAttribute("href",user.link)
+        body.setAttribute("href", strLink);
         userCardContainer.append(card)
 
         // return the result after successfull fetch
