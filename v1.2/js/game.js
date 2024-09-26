@@ -1,30 +1,30 @@
-const gameCardTemplate = document.querySelector("[data-game-template]")
-const gameCardContainer = document.querySelector("[data-game-cards-container]")
+const userCardTemplate = document.querySelector("[data-user-template]")
+const userCardContainer = document.querySelector("[data-user-cards-container]")
 const searchInput = document.querySelector("[data-search]")
 
-let games = []
+let users = []
 
 fetch("js/json/games.json").then((res) => res.json()).then(data => {
-    games = data.map(game=> {
-        const card = gameCardTemplate.content.cloneNode(true).children[0]
+    users = data.map(user=> {
+        const card = userCardTemplate.content.cloneNode(true).children[0]
         const header = card.querySelector("[data-header]")
-        const body = card.querySelector("[data-pic]")
+        const body = card.querySelector("[data-body]")
 
         // adding content into the query selected i.e header and body
-        header.textContent = game.title
-        body.textContent = game.image
-        gameCardContainer.append(card)
+        header.textContent = user.title
+        body.textContent = user.image
+        userCardContainer.append(card)
 
         // return the result after successfull fetch
-        return {title: game.title, description: game.image, element: card}
+        return {title: user.title, description: user.image, element: card}
     });
 
 })
 
 searchInput.addEventListener('input', (e) => {
     const value = e.target.value
-    games.forEach((game) => {
-        const isVisible = game.title.toLowerCase().includes(value) || game.description.toLowerCase().includes(value)
-        game.element.classList.toggle('hide', !isVisible)
+    users.forEach((user) => {
+        const isVisible = user.title.toLowerCase().includes(value) || user.description.toLowerCase().includes(value)
+        user.element.classList.toggle('hide', !isVisible)
     })
 })
