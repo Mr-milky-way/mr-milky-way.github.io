@@ -35,16 +35,8 @@ input{
     margin-top: 1rem;
 }
 .card {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 30px;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s;
-    border-color: rgb(3, 169, 244);
+    border: 1px solid white; 
+    padding: .5rem;
 }
   
 .card:nth-child() {
@@ -52,7 +44,7 @@ input{
 }
   
 .card:hover {
-    background-color: #fff;
+    background-color: white;
     color: #000;
     font-size: 30px;
 }
