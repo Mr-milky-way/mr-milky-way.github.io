@@ -35,7 +35,6 @@ input{
     margin-top: 1rem;
 }
 .card {
-    display: block;
     padding: 10px 20px;
     margin: 10px;
     font-size: 30px;
