@@ -12,9 +12,8 @@ fetch("js/json/games.json").then((res) => res.json()).then(data => {
 
         // adding content into the query selected i.e header and body
         header.textContent = user.title
-        header.setAttribute("href","https://mr-milky-way.github.io/games/xx142-b2exe")
         body.textContent = user.description
-        body.href = "https://mr-milky-way.github.io/games/xx142-b2exe"
+        card.href = user.link
         userCardContainer.append(card)
 
         // return the result after successfull fetch
