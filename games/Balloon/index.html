@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Balloon</title>
-		<!-- Meta Tags -->
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- Stylesheet -->
-		<link rel="stylesheet" type="text/css" href="styles.css">
-	</head>
-	<!-- Google tag (gtag.js) -->
+
+<head>
+	<title>Balloon</title>
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RW5XLDCNXJ"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
 
-  gtag('config', 'G-RW5XLDCNXJ');
+	gtag('config', 'G-RW5XLDCNXJ');
 </script>
-	<body>
-		<!-- Wrapper -->
-		<div class="wrapper">
-			<!-- Web Player -->
-			<div id="pico-container"></div>
-		</div>
-		<!-- Script -->
-		<script src="/games/picoplayer.js"></script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function(event) {
-				PicoPlayer('pico-container', 'cart.p8.png');
-			});
-		</script>
-	</body>
+
+<body>
+	<!-- Wrapper -->
+	<div class="wrapper">
+		<!-- Web Player -->
+		<div id="pico-container"></div>
+	</div>
+	<!-- Script -->
+	<script src="/games/picoplayer.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function (event) {
+			PicoPlayer('pico-container', 'cart.p8.png');
+		});
+	</script>
+</body>
+
 </html>
