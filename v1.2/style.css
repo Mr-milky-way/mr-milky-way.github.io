@@ -34,12 +34,6 @@ input{
     gap: .25rem;
     margin-top: 1rem;
 }
-.user-cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: .25rem;
-    margin-top: 1rem;
-}
 .card{
     border: 1px solid black; 
     background-color: white;
