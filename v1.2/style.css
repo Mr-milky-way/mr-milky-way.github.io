@@ -13,7 +13,7 @@ input{
     gap: .25rem;
     margin-top: 1rem;
 }
-.button {
+.card {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px;
@@ -27,11 +27,11 @@ input{
     border-color: rgb(3, 169, 244);
 }
   
-.button:nth-child() {
+.card:nth-child() {
     background-color: #000;
 }
   
-.button:hover {
+.card:hover {
     background-color: #fff;
     color: #000;
     font-size: 30px;
