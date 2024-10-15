@@ -35,8 +35,26 @@ input{
     margin-top: 1rem;
 }
 .card{
-    border: 1px solid black; 
-    padding: .5rem;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-color: rgb(3, 169, 244);
+}
+.card:nth-child() {
+  background-color: #000;
+}
+  
+.card:hover {
+  background-color: #fff;
+  color: #000;
+  font-size: 30px;
 }
 .card .header{
     margin-bottom: .25rem;
