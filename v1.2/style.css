@@ -37,6 +37,7 @@ input{
 .card {
     border: 1px solid white; 
     padding: .5rem;
+    color: white;
 }
   
 .card:nth-child() {
@@ -46,7 +47,6 @@ input{
 .card:hover {
     background-color: white;
     color: #000;
-    font-size: 30px;
 }
 
 .card .header{
