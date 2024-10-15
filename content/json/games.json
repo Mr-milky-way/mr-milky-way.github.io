@@ -3,18 +3,18 @@
       "title": "1on1soccer",
       "image": "https://mr-milky-way.github.io/games/1on1soccer/wogo.jpg",
       "link": "https://mr-milky-way.github.io/games/1on1soccer",
-      "description": "A challenging puzzle game."
+      "description": "A soccer game"
     },
     {
-      "title": "3d-car-simulator",
-      "image": "https://mr-milky-way.github.io/games/3d-car-simulator/logo.jpeg",
-      "link": "https://mr-milky-way.github.io/games/3d-car-simulator",
+      "title": "2048",
+      "image": "https://mr-milky-way.github.io/games/2048/2048.png",
+      "link": "https://mr-milky-way.github.io/games/2048",
       "description": "A car simulator"
     },
     {
-        "title": "3d-car-simulator",
-        "image": "https://mr-milky-way.github.io/games/3d-car-simulator/logo.jpeg",
-        "link": "https://mr-milky-way.github.io/games/3d-car-simulator",
-        "description": "A car simulator"
-      }
+      "title": "Achievement Unlocked",
+      "image": "https://mr-milky-way.github.io/games/achievementunlocked/achievementunlocked.png",
+      "link": "https://mr-milky-way.github.io/games/achievementunlocked",
+      "description": "A game about Achievements"
+    }
 ]

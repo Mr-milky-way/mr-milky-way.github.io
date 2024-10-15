@@ -4,7 +4,7 @@ const searchInput = document.querySelector("[data-search]")
 
 let users = []
 
-fetch("js/json/games.json").then((res) => res.json()).then(data => {
+fetch("/content/json/games.json").then((res) => res.json()).then(data => {
     users = data.map(user=> {
         const card = userCardTemplate.content.cloneNode(true).children[0]
         const header = card.querySelector("[data-header]")
@@ -12,7 +12,6 @@ fetch("js/json/games.json").then((res) => res.json()).then(data => {
 
         // adding content into the query selected i.e header and body
         header.textContent = user.title
-        body.textContent = user.description
         card.href = user.link
         userCardContainer.append(card)
 
@@ -25,7 +24,7 @@ fetch("js/json/games.json").then((res) => res.json()).then(data => {
 searchInput.addEventListener('input', (e) => {
     const value = e.target.value
     users.forEach((user) => {
-        const isVisible = user.title.toLowerCase().includes(value) || user.description.toLowerCase().includes(value)
+        const isVisible = user.title.toLowerCase().includes(value)
         user.element.classList.toggle('hide', !isVisible)
     })
 })
